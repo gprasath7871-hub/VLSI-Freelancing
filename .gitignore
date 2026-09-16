@@ -1,0 +1,31 @@
+# VLSI build files
+*.log
+*.tmp
+*.bak
+
+# Generated databases / results
+*.db
+*.odb
+*.spef
+*.sdf
+
+# GDS / large generated files
+*.gds
+*.gdsii
+
+# Simulation
+*.vcd
+*.fst
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Client work
+client_work/
+
+# OS/editor
+.DS_Store
+*.swp
