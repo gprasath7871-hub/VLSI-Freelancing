@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/18-openroad-cutrows/or_metrics_out.json /nix/store/9qkr4093f83hkvz5bia9qvxcyc2kzr15-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/cut_rows.tcl

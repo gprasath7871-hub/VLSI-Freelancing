@@ -1,0 +1,15 @@
+{
+  "DESIGN_NAME": "alu8",
+  "VERILOG_FILES": [
+    "dir::rtl/alu8.v"
+  ],
+  "CLOCK_PORT": "",
+  "CLOCK_PERIOD": 10.0,
+  "PDK": "sky130A",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY": 0.5,
+  "RUN_CTS": true,
+  "RUN_DRT": true,
+  "RUN_LVS": true
+}

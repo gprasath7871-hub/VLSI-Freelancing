@@ -1,0 +1,791 @@
+{
+  "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+  "modules": {
+    "alu8": {
+      "attributes": {
+        "hdlname": "alu8",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:1.1-55.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "OP": {
+          "direction": "input",
+          "bits": [ 18, 19, 20 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28 ]
+        },
+        "CARRY": {
+          "direction": "output",
+          "bits": [ 29 ]
+        }
+      },
+      "cells": {
+        "$add$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:16$2": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001001"
+          },
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:16.26-16.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "Y": [ 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
+          }
+        },
+        "$and$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:24$4": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:24.17-24.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "Y": [ 39, 40, 41, 42, 43, 44, 45, 46 ]
+          }
+        },
+        "$not$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:36$7": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:36.17-36.19"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "Y": [ 47, 48, 49, 50, 51, 52, 53, 54 ]
+          }
+        },
+        "$or$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:28$5": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:28.17-28.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "Y": [ 55, 56, 57, 58, 59, 60, 61, 62 ]
+          }
+        },
+        "$procmux$10": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000001000",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:41.12-41.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ "0", "0", "0", "0", "0", "0", 63, 38 ],
+            "S": [ 64, 65, 66, 67, 68, 69, 70, 71 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$procmux$11_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:41.12-41.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "1", "1" ],
+            "Y": [ 64 ]
+          }
+        },
+        "$procmux$12_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:37.12-37.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 65 ]
+          }
+        },
+        "$procmux$13_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:33.12-33.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 66 ]
+          }
+        },
+        "$procmux$14_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:29.12-29.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 67 ]
+          }
+        },
+        "$procmux$15_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:25.12-25.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 68 ]
+          }
+        },
+        "$procmux$16_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:21.12-21.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 69 ]
+          }
+        },
+        "$procmux$17_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:17.12-17.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 70 ]
+          }
+        },
+        "$procmux$18_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.14-13.14|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$procmux$19": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000001000",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:41.12-41.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 3, 4, 5, 6, 7, 8, 9, "0", "0", 2, 3, 4, 5, 6, 7, 8, 47, 48, 49, 50, 51, 52, 53, 54, 72, 73, 74, 75, 76, 77, 78, 79, 55, 56, 57, 58, 59, 60, 61, 62, 39, 40, 41, 42, 43, 44, 45, 46, 80, 81, 82, 83, 84, 85, 86, 87, 30, 31, 32, 33, 34, 35, 36, 37 ],
+            "S": [ 88, 89, 90, 91, 92, 93, 94, 95 ],
+            "Y": [ 21, 22, 23, 24, 25, 26, 27, 28 ]
+          }
+        },
+        "$procmux$20_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:41.12-41.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "1", "1" ],
+            "Y": [ 88 ]
+          }
+        },
+        "$procmux$21_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:37.12-37.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 89 ]
+          }
+        },
+        "$procmux$22_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:33.12-33.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 90 ]
+          }
+        },
+        "$procmux$23_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:29.12-29.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 91 ]
+          }
+        },
+        "$procmux$24_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:25.12-25.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 92 ]
+          }
+        },
+        "$procmux$25_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:21.12-21.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 93 ]
+          }
+        },
+        "$procmux$26_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:17.12-17.12|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 94 ]
+          }
+        },
+        "$procmux$27_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.14-13.14|/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:13.5-52.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18, 19, 20 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$sub$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:20$3": {
+          "hide_name": 1,
+          "type": "$sub",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001001"
+          },
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:20.26-20.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "Y": [ 80, 81, 82, 83, 84, 85, 86, 87, 63 ]
+          }
+        },
+        "$xor$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:32$6": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:32.17-32.22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+            "B": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "Y": [ 72, 73, 74, 75, 76, 77, 78, 79 ]
+          }
+        }
+      },
+      "netnames": {
+        "$add$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:16$2_Y": {
+          "hide_name": 1,
+          "bits": [ 30, 31, 32, 33, 34, 35, 36, 37, 38 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:16.26-16.31"
+          }
+        },
+        "$and$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:24$4_Y": {
+          "hide_name": 1,
+          "bits": [ 39, 40, 41, 42, 43, 44, 45, 46 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:24.17-24.22"
+          }
+        },
+        "$not$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:36$7_Y": {
+          "hide_name": 1,
+          "bits": [ 47, 48, 49, 50, 51, 52, 53, 54 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:36.17-36.19"
+          }
+        },
+        "$or$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:28$5_Y": {
+          "hide_name": 1,
+          "bits": [ 55, 56, 57, 58, 59, 60, 61, 62 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:28.17-28.22"
+          }
+        },
+        "$procmux$11_CMP": {
+          "hide_name": 1,
+          "bits": [ 64 ],
+          "attributes": {
+          }
+        },
+        "$procmux$12_CMP": {
+          "hide_name": 1,
+          "bits": [ 65 ],
+          "attributes": {
+          }
+        },
+        "$procmux$13_CMP": {
+          "hide_name": 1,
+          "bits": [ 66 ],
+          "attributes": {
+          }
+        },
+        "$procmux$14_CMP": {
+          "hide_name": 1,
+          "bits": [ 67 ],
+          "attributes": {
+          }
+        },
+        "$procmux$15_CMP": {
+          "hide_name": 1,
+          "bits": [ 68 ],
+          "attributes": {
+          }
+        },
+        "$procmux$16_CMP": {
+          "hide_name": 1,
+          "bits": [ 69 ],
+          "attributes": {
+          }
+        },
+        "$procmux$17_CMP": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+          }
+        },
+        "$procmux$18_CMP": {
+          "hide_name": 1,
+          "bits": [ 71 ],
+          "attributes": {
+          }
+        },
+        "$procmux$20_CMP": {
+          "hide_name": 1,
+          "bits": [ 88 ],
+          "attributes": {
+          }
+        },
+        "$procmux$21_CMP": {
+          "hide_name": 1,
+          "bits": [ 89 ],
+          "attributes": {
+          }
+        },
+        "$procmux$22_CMP": {
+          "hide_name": 1,
+          "bits": [ 90 ],
+          "attributes": {
+          }
+        },
+        "$procmux$23_CMP": {
+          "hide_name": 1,
+          "bits": [ 91 ],
+          "attributes": {
+          }
+        },
+        "$procmux$24_CMP": {
+          "hide_name": 1,
+          "bits": [ 92 ],
+          "attributes": {
+          }
+        },
+        "$procmux$25_CMP": {
+          "hide_name": 1,
+          "bits": [ 93 ],
+          "attributes": {
+          }
+        },
+        "$procmux$26_CMP": {
+          "hide_name": 1,
+          "bits": [ 94 ],
+          "attributes": {
+          }
+        },
+        "$procmux$27_CMP": {
+          "hide_name": 1,
+          "bits": [ 95 ],
+          "attributes": {
+          }
+        },
+        "$sub$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:20$3_Y": {
+          "hide_name": 1,
+          "bits": [ 80, 81, 82, 83, 84, 85, 86, 87, 63 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:20.26-20.31"
+          }
+        },
+        "$xor$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:32$6_Y": {
+          "hide_name": 1,
+          "bits": [ 72, 73, 74, 75, 76, 77, 78, 79 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:32.17-32.22"
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:2.18-2.19"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:3.18-3.19"
+          }
+        },
+        "CARRY": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:6.22-6.27"
+          }
+        },
+        "OP": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:4.18-4.20"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28 ],
+          "attributes": {
+            "src": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:5.22-5.23"
+          }
+        }
+      }
+    }
+  }
+}

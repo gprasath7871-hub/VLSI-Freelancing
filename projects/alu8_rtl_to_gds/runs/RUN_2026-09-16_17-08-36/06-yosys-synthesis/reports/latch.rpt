@@ -1,0 +1,4 @@
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\alu8.\Y' from process `\alu8.$proc$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:9$1'.
+No latch inferred for signal `\alu8.\CARRY' from process `\alu8.$proc$/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/rtl/alu8.v:9$1'.

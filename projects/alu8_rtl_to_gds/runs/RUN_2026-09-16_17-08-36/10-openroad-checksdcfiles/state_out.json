@@ -1,0 +1,14 @@
+{
+    "json_h": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/RUN_2026-09-16_17-08-36/05-yosys-jsonheader/alu8.h.json",
+    "nl": "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/RUN_2026-09-16_17-08-36/06-yosys-synthesis/alu8.nl.v",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 133,
+        "design__instance__area": 1168.6208,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

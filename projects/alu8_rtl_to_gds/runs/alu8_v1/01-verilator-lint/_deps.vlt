@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/tmp/7d9d6f308285479085995a8b0125b8b8.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/tmp/7d9d6f308285479085995a8b0125b8b8.bb.v"
