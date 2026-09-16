@@ -1,0 +1,19 @@
+read_verilog rtl/alu8.v
+
+hierarchy -top alu8
+
+proc
+opt
+flatten
+opt
+
+techmap
+opt
+
+abc -g simple
+
+clean
+
+stat
+
+write_verilog results/alu8_synth.v
