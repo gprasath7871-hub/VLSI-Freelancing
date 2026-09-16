@@ -1,0 +1,19 @@
+read_verilog rtl/uart_tx.v
+
+hierarchy -top uart_tx
+
+proc
+opt
+flatten
+opt
+
+techmap
+opt
+
+abc -g simple
+
+clean
+
+stat
+
+write_verilog results/uart_tx_synth.v
