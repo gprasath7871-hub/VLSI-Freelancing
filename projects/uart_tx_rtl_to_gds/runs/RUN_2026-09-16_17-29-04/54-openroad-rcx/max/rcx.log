@@ -1,0 +1,42 @@
+Reading technology LEF file at '/home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef'…
+[INFO ODB-0227] LEF file: /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef, created 14 layers, 25 vias
+Reading cell LEF file at '/home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 8 library cells
+Reading cell LEF file at '/home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: /home/gp7871/VLSI_Freelancing/projects/uart_tx_rtl_to_gds/runs/RUN_2026-09-16_17-29-04/53-odb-cellfrequencytables/uart_tx.def
+[INFO ODB-0128] Design: uart_tx
+[INFO ODB-0130]     Created 15 pins.
+[INFO ODB-0131]     Created 792 components and 3622 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 3068 connections.
+[INFO ODB-0133]     Created 166 nets and 551 connections.
+[INFO ODB-0134] Finished DEF file: /home/gp7871/VLSI_Freelancing/projects/uart_tx_rtl_to_gds/runs/RUN_2026-09-16_17-29-04/53-odb-cellfrequencytables/uart_tx.def
+Using RCX ruleset '/home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre -lef_res
+[INFO RCX-0435] Reading extraction model file /home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre ...
+[INFO RCX-0436] RC segment generation uart_tx (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 798 rc segments
+[INFO RCX-0439] Coupling Cap extraction uart_tx ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 53% of 1139 wires extracted
+[INFO RCX-0442] 100% of 1139 wires extracted
+[INFO RCX-0045] Extract 166 nets, 964 rsegs, 964 caps, 1014 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               584    2000.67
+  Tap cell                                 50      62.56
+  Standard cell                           158    1879.30
+  Total                                   792    3942.53
+Writing extracted parasitics to '/home/gp7871/VLSI_Freelancing/projects/uart_tx_rtl_to_gds/runs/RUN_2026-09-16_17-29-04/54-openroad-rcx/max/uart_tx.max.spef'…
+[INFO RCX-0443] 166 nets finished

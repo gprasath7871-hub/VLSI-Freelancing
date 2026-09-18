@@ -1,0 +1,118 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/gp7871/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading OpenROAD database at '/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/21-openroad-generatepdn/alu8.odb'…
+Reading design constraints file at '/nix/store/9qkr4093f83hkvz5bia9qvxcyc2kzr15-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[WARNING] No CLOCK_PORT found. A dummy clock will be used.
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5.0%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
++ global_placement -density 0.5 -skip_io -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 59.340 62.560 ) um
+[INFO GPL-0036] Movable instances area:       1168.621 um^2
+[INFO GPL-0037] Total instances area:         1363.808 um^2
+[INFO GPL-0035] Pin density area adjust:        61.535 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:               213
+[INFO GPL-0007] Movable instances:                 133
+[INFO GPL-0008] Fixed instances:                    80
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                    152
+[INFO GPL-0011] Number of pins:                    513
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 65.090 75.810 ) um
+[INFO GPL-0013] Core BBox: (  5.520 10.880 ) ( 59.340 62.560 ) um
+[INFO GPL-0016] Core area:                    2781.418 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                  2781.418 um^2
+[INFO GPL-0017] Fixed instances area:          195.187 um^2
+[INFO GPL-0018] Movable instances area:       1230.156 um^2
+[INFO GPL-0019] Utilization:                    47.566 %
+[INFO GPL-0020] Standard cells area:          1230.156 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 133	Region center = 0
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.5000
+[INFO GPL-0024] Movable insts average area:      9.249 um^2
+[INFO GPL-0025] Ideal bin area:                 18.499 um^2
+[INFO GPL-0026] Ideal bin count:                   150
+[INFO GPL-0027] Total bin area:               2781.418 um^2
+[INFO GPL-0028] Bin count (X, Y):           8 ,      8
+[INFO GPL-0029] Bin size (W * H):       6.728 *  6.460 um
+[INFO GPL-0030] Number of bins:                     64
+[INFO GPL-0007] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9305 |  3.018780e+02 |   +0.00% |  1.45e-13 |      
+       10 |   0.9305 |  2.094390e+02 |  -30.62% |  2.36e-13 |      
+       20 |   0.9305 |  2.093540e+02 |   -0.04% |  3.85e-13 |      
+       30 |   0.9305 |  2.092870e+02 |   -0.03% |  6.27e-13 |      
+       40 |   0.9305 |  2.093430e+02 |   +0.03% |  1.02e-12 |      
+       50 |   0.9305 |  2.092910e+02 |   -0.02% |  1.66e-12 |      
+       60 |   0.9305 |  2.094590e+02 |   +0.08% |  2.71e-12 |      
+       70 |   0.9305 |  2.096010e+02 |   +0.07% |  4.42e-12 |      
+       80 |   0.9305 |  2.098290e+02 |   +0.11% |  7.19e-12 |      
+       90 |   0.9305 |  2.097260e+02 |   -0.05% |  1.17e-11 |      
+      100 |   0.9305 |  2.098380e+02 |   +0.05% |  1.91e-11 |      
+      110 |   0.9305 |  2.100610e+02 |   +0.11% |  3.11e-11 |      
+      120 |   0.9302 |  2.103540e+02 |   +0.14% |  5.06e-11 |      
+      130 |   0.9298 |  2.131230e+02 |   +1.32% |  8.25e-11 |      
+      140 |   0.9285 |  2.145280e+02 |   +0.66% |  1.34e-10 |      
+      150 |   0.9223 |  2.280170e+02 |   +6.29% |  2.19e-10 |      
+      160 |   0.8292 |  4.327050e+02 |  +89.77% |  3.56e-10 |      
+      170 |   0.8418 |  4.974820e+02 |  +14.97% |  5.81e-10 |      
+      180 |   0.7824 |  6.196990e+02 |  +24.57% |  9.46e-10 |      
+      190 |   0.7286 |  7.234880e+02 |  +16.75% |  1.54e-09 |      
+      200 |   0.6856 |  8.247740e+02 |  +14.00% |  2.51e-09 |      
+      210 |   0.6412 |  9.461220e+02 |  +14.71% |  4.09e-09 |      
+      220 |   0.5910 |  1.022195e+03 |   +8.04% |  6.66e-09 |      
+      230 |   0.5419 |  1.123303e+03 |   +9.89% |  1.08e-08 |      
+      240 |   0.4916 |  1.232840e+03 |   +9.75% |  1.77e-08 |      
+      250 |   0.4418 |  1.324162e+03 |   +7.41% |  2.88e-08 |      
+      260 |   0.3990 |  1.428039e+03 |   +7.84% |  4.69e-08 |      
+      270 |   0.3592 |  1.520226e+03 |   +6.46% |  7.64e-08 |      
+      280 |   0.3180 |  1.590444e+03 |   +4.62% |  1.16e-07 |      
+      290 |   0.2788 |  1.642768e+03 |   +3.29% |  1.71e-07 |      
+      300 |   0.2403 |  1.683649e+03 |   +2.49% |  2.52e-07 |      
+      310 |   0.2082 |  1.722073e+03 |   +2.28% |  3.71e-07 |      
+      320 |   0.1785 |  1.764077e+03 |   +2.44% |  5.46e-07 |      
+      330 |   0.1437 |  1.804525e+03 |   +2.29% |  8.04e-07 |      
+      340 |   0.1079 |  1.834759e+03 |   +1.68% |  1.18e-06 |      
+      343 |   0.0981 |  1.841278e+03 |          |  1.38e-06 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 343
+[INFO GPL-1002] Placed Cell Area             1230.1560
+[INFO GPL-1003] Available Free Area          2586.2304
+[INFO GPL-1004] Minimum Feasible Density        0.4800 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.5285
+[INFO GPL-1008]     - For 80% usage of free space: 0.5946
+[INFO GPL-1009]     - For 50% usage of free space: 0.9513
+[INFO GPL-1014] Final placement area: 1230.16 (+0.00%)
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                38     142.64
+  Tap cell                                 42      52.55
+  Inverter                                  5      18.77
+  Multi-Input combinational cell          128    1149.85
+  Total                                   213    1363.81
+Writing OpenROAD database to '/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/24-openroad-globalplacementskipio/alu8.odb'…
+Writing netlist to '/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/24-openroad-globalplacementskipio/alu8.nl.v'…
+Writing powered netlist to '/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/24-openroad-globalplacementskipio/alu8.pnl.v'…
+Writing layout to '/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/24-openroad-globalplacementskipio/alu8.def'…
+Writing timing constraints to '/home/gp7871/VLSI_Freelancing/projects/alu8_rtl_to_gds/runs/alu8_v1/24-openroad-globalplacementskipio/alu8.sdc'…
