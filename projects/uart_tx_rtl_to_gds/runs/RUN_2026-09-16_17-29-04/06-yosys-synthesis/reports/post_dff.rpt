@@ -1,0 +1,38 @@
+106. Printing statistics.
+
+=== uart_tx ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      172        - wires
+      206        - wire bits
+        9        - public wires
+       43        - public wire bits
+        6        - ports
+       13        - port bits
+      194  659.382 cells
+       28        -   $_ANDNOT_
+       72        -   $_MUX_
+       10        -   $_NAND_
+        5        -   $_NOR_
+        2        -   $_NOT_
+       10        -   $_ORNOT_
+       19        -   $_OR_
+        5        -   $_XNOR_
+       12        -   $_XOR_
+       31  659.382   sky130_fd_sc_hd__dfxtp_2
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\uart_tx': 659.382400
+     of which used for sequential elements: 659.382400 (100.00%)
+

@@ -1,0 +1,39 @@
+100. Printing statistics.
+
+=== uart_tx ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      111 wires
+      145 wire bits
+        9 public wires
+       43 public wire bits
+        6 ports
+       13 port bits
+      133 cells
+       28   $_ANDNOT_
+       11   $_MUX_
+       10   $_NAND_
+        5   $_NOR_
+        2   $_NOT_
+       10   $_ORNOT_
+       19   $_OR_
+       20   $_SDFFE_PP0P_
+       10   $_SDFFE_PP1P_
+        1   $_SDFF_PP0_
+        5   $_XNOR_
+       12   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_SDFFE_PP0P_ is unknown!
+   Area for cell type $_SDFFE_PP1P_ is unknown!
+   Area for cell type $_SDFF_PP0_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+

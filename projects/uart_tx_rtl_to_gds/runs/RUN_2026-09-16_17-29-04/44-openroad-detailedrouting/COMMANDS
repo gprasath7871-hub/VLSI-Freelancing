@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/gp7871/VLSI_Freelancing/projects/uart_tx_rtl_to_gds/runs/RUN_2026-09-16_17-29-04/44-openroad-detailedrouting/or_metrics_out.json /nix/store/9qkr4093f83hkvz5bia9qvxcyc2kzr15-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/drt.tcl

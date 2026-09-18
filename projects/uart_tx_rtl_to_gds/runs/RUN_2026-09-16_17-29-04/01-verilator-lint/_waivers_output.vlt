@@ -1,0 +1,11 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule WIDTHEXPAND -file "*/home/gp7871/VLSI_Freelancing/projects/uart_tx_rtl_to_gds/rtl/uart_tx.v" -match "Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'baud_counter' generates 16 bits.*"
+

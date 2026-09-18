@@ -1,0 +1,18 @@
+{
+  "DESIGN_NAME": "uart_tx",
+
+  "VERILOG_FILES": [
+    "dir::rtl/uart_tx.v"
+  ],
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20.0,
+
+  "PNR_SDC_FILE": "dir::constraints/uart_tx.sdc",
+
+  "PDK": "sky130A",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY": 0.50
+}
